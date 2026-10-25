@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+{%- if page.redirect_home %}
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0; url=/">
+{%- else %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{%- endif %}
+  <link rel="icon" type="image/png" href="/assets/img/icon-200.png">
+  <link rel="apple-touch-icon" href="/assets/img/icon-200.png">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+  <main>
+{{ content }}
+  </main>
+{% include footer.html %}
+</body>
+</html>

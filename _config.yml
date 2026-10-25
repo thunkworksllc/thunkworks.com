@@ -1,0 +1,7 @@
+title: ThunkWorks LLC
+description: ThunkWorks LLC — Cloud Services and Software Development.
+url: https://thunkworks.com
+business_name: ThunkWorks LLC
+exclude:
+  - README.md
+  - CLAUDE.md

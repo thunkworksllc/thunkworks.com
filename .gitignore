@@ -1,0 +1,16 @@
+# Track only what GitHub Pages needs to build and serve the site.
+/*
+!/.gitignore
+!/CNAME
+!/_config.yml
+!/_includes/
+!/_layouts/
+!/assets/
+!/index.html
+!/404.html
+
+# OS and editor clutter inside the allowed folders
+.DS_Store
+Thumbs.db
+*.swp
+*~
